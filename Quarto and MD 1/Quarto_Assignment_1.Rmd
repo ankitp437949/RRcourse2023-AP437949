@@ -10,11 +10,11 @@ knitr::opts_chunk$set(echo = TRUE)
 ```
 
 
-## How I met your Mother
+# How I met your Mother
 
 How I Met Your Mother (often abbreviated as HIMYM) is an American sitcom, created by Craig Thomas and Carter Bays for CBS. The series, which aired from September 19, 2005 to March 31, 2014, follows the main character, Ted Mosby, and his group of friends in New York City's Manhattan. As a framing device, Ted, in 2030, recounts to his son, Luke, and daughter, Penny, the events from September 2005 to May 2013 that led him to meet their mother. How I Met Your Mother, is a joint production by Bays & Thomas Productions and 20th Century Fox Television and syndicated by 20th Television (now Disney-ABC Domestic Television).
 
-
+# Seasons information
 
 | Season | Episodes | Originally aired | Rank |
 | ------ | -------- | ---------------- | ---- |
@@ -28,3 +28,27 @@ How I Met Your Mother (often abbreviated as HIMYM) is an American sitcom, create
 | 8      | 24       | September 24, 2012 | May 13, 2013 | 42 |
 | 9      | 24       | September 23, 2013 | March 31, 2014 | 28 |
 
+
+## How I Met you Mother poster
+
+<img src="https://ca-times.brightspotcdn.com/dims4/default/7c48ce9/2147483647/strip/true/crop/1502x985+0+0/resize/1200x787!/format/webp/quality/80/?url=https%3A%2F%2Fcalifornia-times-brightspot.s3.amazonaws.com%2F80%2Fd1%2Fc3fc8fe64d097a4d79f7a378be34%2Fla-104383-ca-1109-mother2-gf-jpg-20140330" alt="My Image" width="500" height="300">
+
+
+```{r}
+library(ggplot2)
+
+# create a data frame with the season and viewers data
+season_viewers <- data.frame(
+  season = c(1, 2, 3, 4, 5, 6, 7, 8, 9),
+  viewers = c(9.47, 8.94, 8.21, 9.42, 8.60, 8.79, 9.67, 9.02, 10.51)
+)
+
+# create a line graph with season on the x-axis and viewers on the y-axis
+ggplot(season_viewers, aes(x = season, y = viewers)) +
+  geom_line() +
+  geom_point() +
+  xlab("Season") +
+  ylab("Viewers (millions)") +
+  ggtitle("Viewership by Season")
+
+```
