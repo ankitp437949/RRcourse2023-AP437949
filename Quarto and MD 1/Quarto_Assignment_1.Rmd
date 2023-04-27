@@ -1,0 +1,30 @@
+---
+title: "Quarta_Assignment"
+author: "Ankit"
+date: "2023-04-27"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+
+## How I met your Mother
+
+How I Met Your Mother (often abbreviated as HIMYM) is an American sitcom, created by Craig Thomas and Carter Bays for CBS. The series, which aired from September 19, 2005 to March 31, 2014, follows the main character, Ted Mosby, and his group of friends in New York City's Manhattan. As a framing device, Ted, in 2030, recounts to his son, Luke, and daughter, Penny, the events from September 2005 to May 2013 that led him to meet their mother. How I Met Your Mother, is a joint production by Bays & Thomas Productions and 20th Century Fox Television and syndicated by 20th Television (now Disney-ABC Domestic Television).
+
+
+
+| Season | Episodes | Originally aired | Rank |
+| ------ | -------- | ---------------- | ---- |
+| 1      | 22       | September 19, 2005 | May 15, 2006 | 85 |
+| 2      | 22       | September 18, 2006 | May 14, 2007 | 61 |
+| 3      | 20       | September 24, 2007 | May 19, 2008 | 70 |
+| 4      | 24       | September 22, 2008 | May 18, 2009 | 49 |
+| 5      | 24       | September 21, 2009 | May 24, 2010 | 42 |
+| 6      | 24       | September 20, 2010 | May 16, 2011 | 48 |
+| 7      | 24       | September 19, 2011 | May 14, 2012 | 45 |
+| 8      | 24       | September 24, 2012 | May 13, 2013 | 42 |
+| 9      | 24       | September 23, 2013 | March 31, 2014 | 28 |
+
