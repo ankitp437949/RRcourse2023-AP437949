@@ -52,3 +52,6 @@ ggplot(season_viewers, aes(x = season, y = viewers)) +
   ggtitle("Viewership by Season")
 
 ```
+
+The data shows that there have been significant changes in viewership throughout the nine seasons of the TV show. For example, the viewership decreased by an average of 0.27 million between seasons 1 and 2, and then increased by an average of 0.27 million between seasons 2 and 3. However, the viewership then decreased again by an average of 0.13 million between seasons 3 and 4, and this trend continued until season 6, where the viewership hit its lowest point at an average of 7.15 million viewers. After that, the viewership started to pick up again, with season 9 having the highest average viewership of 10.51 million. Overall, the viewership changes were significant and showed a clear trend of ups and downs throughout the show's run.
+
