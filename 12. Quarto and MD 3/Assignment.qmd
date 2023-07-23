@@ -1,15 +1,20 @@
 ---
 title: "Assignment"
-author: ""
+author: "Ankit Pandey - 437949"
 date: today
 output: html_document
 ---
 
 ```{r}
-load("../Data/season_1.RData")
+load("../Data/season_2.RData")
+season_data <- read.csv("C:\\Users\\Ankit\\OneDrive\\Documents\\ReproducibleR\\RRcourse2023\\Data\\season_2.csv")
+most_viewed <- season_data[which.max(season_data$viewers), ]
+
+# Extract the title of the most viewed episode
+most_viewed_title <- most_viewed$title
 ```
 
-# Game of Thrones - Season 1 summary in numbers
+# Game of Thrones - Season 2 summary in numbers
 
 ### __(*Warning:* spoilers ahead)__
 
@@ -23,13 +28,16 @@ Set on the fictional continents of Westeros and Essos, Game of Thrones has a lar
 
 ***
 
-### Season 1 summary
+### Season 2 summary
 
-Season 1 of Game of Thrones consisted of 10 episodes that aired between April 17 and June 19, 2011 on HBO. The show gathered an average of 2.515 first-day TV viewers in the US, with the number growing from 2.22 to 3.04 million by the end of the season.
+Season 2 of Game of Thrones consisted of `r nrow(season_data)` episodes that aired between `r min(season_data$premiere_date)` and `r max(season_data$premiere_date)` on HBO. The show gathered an average of `r mean(season_data$viewers)` first-day TV viewers in the US, with the number growing from `r min(season_data$viewers)` to `r max(season_data$viewers)` million by the end of the season.
 
-The most popular episode of the season was "Fire and Blood", in which:
+The most popular episode of the season was `r most_viewed$title`, in which:
+> "`r most_viewed$description`"
 
-> "The North secedes from the Seven Kingdoms and proclaims Robb as king. With Jaime as the Starks' prisoner and Robert's two brothers, Stannis and Renly, each challenging Joffrey's claim to the throne, Tywin appoints Tyrion as acting King's Hand, while Tywin fights to defend Joffrey's reign. Jon attempts to desert the Night's Watch to avenge Ned and join Robb, but his Night's Watch brothers convince him to honor his oath. Jon joins an expedition to search for Benjen Stark beyond the Wall. Yoren, a Night's Watch recruiter, smuggles Arya out of King's Landing disguised as a boy, while Joffrey intends to crown Sansa his queen, despite executing her father. Daenerys's baby is born deformed and dead, and Drogo is left in a vegetative state by the witch's treacherous magic. Daenerys compassionately ends Drogo's life. She places the three dragon eggs on Drogo's funeral pyre and sets it afire, also burning the witch alive. Ignoring Jorah's pleas, she walks into the flames. When the embers die the following morning, Daenerys is found in the ashes, unharmed, flanked by three newly-hatched baby dragons. Jorah and other witnesses kneel before her."
+
+> "The episode concludes many storylines featured throughout the second season, such as Tyrion Lannister's position as Hand of the King, Stannis Baratheon's impending invasion, and Sansa Stark's betrothal to Joffrey Baratheon. In the episode, citizens of King's Landing deal with the aftermath of Stannis's failed attack on the city, with Tywin Lannister being named Hand of the King in Tyrion's stead; Sansa's engagement to Joffrey is annulled, and Margaery Tyrell is betrothed in her place; and Stannis broods in defeat at Dragonstone. Other plotlines include Brienne of Tarth escorting Jaime Lannister south, Jon Snow earning the trust of the Free Folk, and Daenerys Targaryen reuniting with her dragons in the House of the Undying. The episode's title is a code phrase spoken by Jaqen H'ghar to Arya Stark, but its meaning, "all men must die", is not explained until the next season.
+Valar Morghulis received positive reviews from critics and audiences, and achieved a viewership of 4.20 million during its initial airing in the United States, setting a new record for the series. At the 64th Primetime Creative Arts Emmy Awards, the episode won the award for Outstanding Special Visual Effects and was nominated for Outstanding Prosthetic Makeup."
 
 ***
 
@@ -46,7 +54,7 @@ Finally, the episodes with the above-average viewership were:
 
 | No. in season | Title  | Directed by  |
 |:------        |:-----: |:------:      |
-| 5             | "The Wolf and the Lion"  | Brian Kirk      |
-| 8             | "The Pointy End" | Daniel Minahan      |
-| 9             | "Baelor" | Alan Taylor      |
-| 10            | "Fire and Blood" | Alan Taylor      |
+| 5             | "The Night Lands"  | Alan Taylor      |
+| 8             | "The Ghost of Harrenhal" | David Petrarca      |
+| 9             | "Blackwater" | Alan Taylor      |
+| 10            | "Valar Morghulis" | Alan Taylor      |
